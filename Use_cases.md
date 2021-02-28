@@ -1,4 +1,4 @@
-#Use Cases and Component Specifications of the VER Predictor:# 
+**Use Cases and Component Specifications of the VER Predictor:** 
 
 
 **1. Estimate VER for a given Light-rail expansion:**
