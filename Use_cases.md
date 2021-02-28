@@ -1,7 +1,7 @@
-Use Cases and Component Specifications of the VER Predictor: 
+##Use Cases and Component Specifications of the VER Predictor:## 
 
 
-1. Estimate VER for a given Light-rail expansion:
+**1. Estimate VER for a given Light-rail expansion:**
 
 User: Citizens, policy makers, environmental groups, city planners
 
@@ -16,7 +16,7 @@ Starting location of light-rail line
 Ending location of light-rail line
 
 
-2. Predict VER based on future Light-rail expansion routes
+**2. Predict VER based on future Light-rail expansion routes**
 
 User: Citizens, policy makers, environmental groups, city planners 
 
@@ -43,7 +43,7 @@ Proposed length of light rail line
 Expected reduction in vehicle traffic
  
 
-3. Provide general insight into predicted traffic patterns based on current trends
+**3. Provide general insight into predicted traffic patterns based on current trends**
 
 User: Citizens, contractors, city planners, restaurant/business owners
 Information provided by the user: New or existing building, region of Seattle, address for isolating local traffic flow
