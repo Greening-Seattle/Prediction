@@ -12,6 +12,9 @@ Testing first push to repository - Matthew
 |   .travis.yml
 |   .gitignore
 |
++---doc
+|   |   Use_Cases.md
+|
 +---greenseattle
 |   |   __init__.py
 |   |   core.py (#### what function can we deliver in a week?)
