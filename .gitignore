@@ -1,0 +1,3 @@
+# ignore generated python files and and jupyter note book files
+.ipynb_checkpoints
+__pycache__
