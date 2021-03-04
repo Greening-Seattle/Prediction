@@ -5,7 +5,7 @@ Testing first push to repository - Matthew
 
 [Use case graphic](brendanbutler.github.com/Greening-Seattle/Prediction/img/Slide1.jpg)
 
-# Description of the Repository's Architecture
+# Architecture of Repository
 ```
 |   README.md
 |   LICENSE
