@@ -1,0 +1,6 @@
+# ignore the following file, which is a test template
+# remove from the .gitignore file to test
+tmp_fortravis/ 
+
+# ignore the following junk outputs
+__pycache__
