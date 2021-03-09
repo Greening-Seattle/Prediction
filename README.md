@@ -1,22 +1,29 @@
-# Traffic Prediction
+# Greening Seattle, the Modeling
 
 [![Build Status](https://travis-ci.org/Greening-Seattle/Prediction.svg?branch=main)](https://travis-ci.org/Greening-Seattle/Prediction)
 
 [![Coverage Status](https://coveralls.io/repos/github/Greening-Seattle/Prediction/badge.svg?branch=main)](https://coveralls.io/github/Greening-Seattle/Prediction?branch=main)
 
-## Welcome to Greening Seattle, the Modeling!
+## Welcome!
 
-The overrarching goal of this software is to inform citizens, policymakers, or environmental groups of
-how traffic flow patters throughout the City are projected to change in response to current and historical
-trends in a variety of urban features. As a user of our software, you will be able to:
+In the City of Seattle, transportation accounts for 60% of total core emissions, 61% of which are attributed to
+gasoline/diesel sources. Population increased by 25% from 2008 - 2018, and is expected to continue at the same rate
+(if not faster). The effects of this increase will be felt by our existing infrastructure and transportation systems,
+such as our bus system. Citizen survey data indicates a push for Seattle transportation to be more robust and equitable.
+As a functioning unit, accessible transportation lies at the interface of social, environmental and economic justice.
+
+The overrarching goal of this software is therefore to use historic traffic patterns in Seattle over the past 10+ years in
+order to inform citizens, policymakers, or environmental groups of how traffic throughout the City is projected to change
+in response to our constantly changing urban landscape. Specifically, users will be able to:
 
   1. Calculate how traffic flows have in increased over two prior years for a given Census tract region of Seattle 
   2. For a specific Census tract region, generate predicted traffic flow in region in a future year 
   3. Estimate changes in traffic flow based on % changes in the following features over the next _N_ years:
   
       i. Bike lanes
-     ii. Parking spaces
-    iii. Light rail addition
+     ii. Pedestrian walkways
+    iii. Parking spaces
+     iv. Light rail addition
  
 [Use case graphic](brendanbutler.github.com/Greening-Seattle/Prediction/img/Slide1.jpg)
 
