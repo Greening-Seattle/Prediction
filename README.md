@@ -1,4 +1,4 @@
-# Prediction
+# Traffic Prediction
 
 [![Build Status](https://travis-ci.org/Greening-Seattle/Prediction.svg?branch=main)](https://travis-ci.org/Greening-Seattle/Prediction)
 
