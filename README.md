@@ -20,13 +20,13 @@ in response to our constantly changing urban landscape. Specifically, users will
   2. For a specific Census tract region, generate predicted traffic flow in region in a future year 
   3. Estimate changes in traffic flow based on % changes in the following features over the next _N_ years:
   
-      i. Bike lanes
-     
-     ii. Pedestrian walkways
+         i. Bike lanes
+      
+         ii. Pedestrian walkways
+      
+         iii. Parking spaces
     
-    iii. Parking spaces
-    
-    iv. Light rail addition
+         iv. Light rail addition
  
 [Use case graphic](brendanbutler.github.com/Greening-Seattle/Prediction/img/Slide1.jpg)
 
