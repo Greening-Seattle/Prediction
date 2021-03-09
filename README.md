@@ -1,9 +1,7 @@
 # Prediction
 
-# Build Badge
 [![Build Status](https://travis-ci.org/Greening-Seattle/Prediction.svg?branch=main)](https://travis-ci.org/Greening-Seattle/Prediction)
 
-# Coverage Badge
 [![Coverage Status](https://coveralls.io/repos/github/Greening-Seattle/Prediction/badge.svg?branch=main)](https://coveralls.io/github/Greening-Seattle/Prediction?branch=main)
 
 Predicting pollution reductions
