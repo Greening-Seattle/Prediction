@@ -8,6 +8,7 @@ import greenseattle
 
 data_path = os.path.join(greenseattle.__path__[0], 'data')
 
+
 def test_convert_csv():
     """
     Test instance that the output is a pandas dataframe
