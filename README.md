@@ -21,9 +21,12 @@ in response to our constantly changing urban landscape. Specifically, users will
   3. Estimate changes in traffic flow based on % changes in the following features over the next _N_ years:
   
       i. Bike lanes
+     
      ii. Pedestrian walkways
+    
     iii. Parking spaces
-     iv. Light rail addition
+    
+    iv. Light rail addition
  
 [Use case graphic](brendanbutler.github.com/Greening-Seattle/Prediction/img/Slide1.jpg)
 
