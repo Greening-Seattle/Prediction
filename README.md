@@ -6,8 +6,6 @@
 
 Predicting pollution reductions
 
-Testing first push to repository - Matthew
-
 [Use case graphic](brendanbutler.github.com/Greening-Seattle/Prediction/img/Slide1.jpg)
 
 ## Architecture of Repository
@@ -22,11 +20,11 @@ Testing first push to repository - Matthew
 |
 +---greenseattle
 |   |   __init__.py
-|   |   core.py (#### what function can we deliver in a week?)
-|   |   somefunction.py (#### some function to setup travis)
+|   |   greenseattle.py
 |   |
 |   +---tests
 |   |   __init__.py
-|   |   __test_core.py 
-|   |   __test_somefunction.py (#### to set and test travis)
+|   |   test_greenseattle.py 
+|   \---data
+|           testing.csv
 ```
