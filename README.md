@@ -1,4 +1,4 @@
-# Greening Seattle, the Modeling
+# Greening Seattle, the Making (Prediction Modeling)
 
 [![Build Status](https://travis-ci.org/Greening-Seattle/Prediction.svg?branch=main)](https://travis-ci.org/Greening-Seattle/Prediction)
 
