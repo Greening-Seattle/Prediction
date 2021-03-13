@@ -3,17 +3,26 @@
 
 **1. Estimate VER for a given Light-rail expansion:**
 
-User: Citizens, policy makers, environmental groups, city planners
+User: Citizens, policy makers, environmental groups, city planners - or anyone who is interested in 
+learning about how different attributes of city planning and development relate to traffic flow in 
+the city. 
 
 Information provided by the user: Past Lightrail expansion lines
+
+*Changes of interest 
 
 Response provided by the system: Compares population-adjusted traffic flow data to that after user-input light rail information, computes VER for Light-rail expansion route
 	
 -Components:
 
-Starting location of light-rail line
+All different input features of interest 
 
-Ending location of light-rail line
+Length of bikelanes
+Number of bikeracks
+Population estimate
+Parking Spots
+Walkways
+Metro ridership??
 
 
 **2. Predict VER based on future Light-rail expansion routes**
