@@ -5,6 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/Greening-Seattle/Prediction/badge.svg?branch=main)](https://coveralls.io/github/Greening-Seattle/Prediction?branch=main)
 
 ## Welcome!
+**Version 1.0.0**
 
 In the City of Seattle, transportation accounts for 60% of total core emissions, 61% of which are attributed to
 gasoline/diesel sources. Population increased by 25% from 2008 - 2018, and is expected to continue at the same rate
