@@ -16,19 +16,19 @@ The overrarching goal of this software is therefore to use historic traffic patt
 order to inform citizens, policymakers, or environmental groups of how traffic throughout the City is projected to change
 in response to our constantly changing urban landscape. Specifically, users will be able to:
 
-  1. Calculate how traffic flows have in increased over two prior years for a given Census tract region of Seattle 
+  1. Calculate how traffic flows have in increased over two prior years for a given region of Seattle, specified by zip code. 
   
-  2. For a specific Census tract region, generate predicted traffic flow in region in a future year 
+  2. For a specific zip code, generate predicted traffic flow in region in a future year. 
   
   3. Estimate changes in traffic flow based on % changes in the following features over the next _N_ years:
   
          i. Bike lanes
       
-         ii. Pedestrian walkways
+         ii. Bike racks
       
-         iii. Parking spaces
+         iii. Walkways
     
-         iv. Light rail addition
+         iv. Population
  
 [Use case graphic](brendanbutler.github.com/Greening-Seattle/Prediction/img/Slide1.jpg)
 
