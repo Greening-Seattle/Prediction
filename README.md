@@ -5,6 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/Greening-Seattle/Prediction/badge.svg?branch=main)](https://coveralls.io/github/Greening-Seattle/Prediction?branch=main)
 
 ## Welcome!
+**Version 1.0.0**
 
 In the City of Seattle, transportation accounts for 60% of total core emissions, 61% of which are attributed to
 gasoline/diesel sources. Population increased by 25% from 2008 - 2018, and is expected to continue at the same rate
@@ -16,19 +17,21 @@ The overrarching goal of this software is therefore to use historic traffic patt
 order to inform citizens, policymakers, or environmental groups of how traffic throughout the City is projected to change
 in response to our constantly changing urban landscape. Specifically, users will be able to:
 
-  1. Calculate how traffic flows have in increased over two prior years for a given Census tract region of Seattle 
+  1. Calculate how traffic flows have in increased over two prior years for a given region of Seattle, specified by zip code. 
   
-  2. For a specific Census tract region, generate predicted traffic flow in region in a future year 
-  
-  3. Estimate changes in traffic flow based on % changes in the following features over the next _N_ years:
+  2. For a specific zip code, generate predicted traffic flow in region in a future year. Works by estimating changes in traffic flow for
+     an input zip code based on % changes in the following features over the next _N_ years:
   
          i. Bike lanes
       
-         ii. Pedestrian walkways
+         ii. Bike racks
       
-         iii. Parking spaces
+         iii. Walkways
     
-         iv. Light rail addition
+         iv. Population
+    
+  3. Identify critical regions for improved transit infrastructure by statistical analysis of differences in traffic flow patterns.
+     Examines distributions of traffic flows by road in zip code.
  
 [Use case graphic](brendanbutler.github.com/Greening-Seattle/Prediction/img/Slide1.jpg)
 
