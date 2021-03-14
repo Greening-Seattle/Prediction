@@ -55,4 +55,25 @@ def get_gdf(year):
 def get_census_bounds():
     url = 'https://opendata.arcgis.com/datasets/de58dc3e1efc49b782ab357e044ea20c_9.geojson'
     bounds = gpd.read_file(url)
-    return bounds
+    census_columns = ['NAME10', 'SHAPE_Area', 'geometry']
+    census_bounds_cleaned = census_bounds.loc[:,census_columns]
+    census_bounds_cleaned['NAME10'] = census_bounds_cleaned['NAME10'].astype(float)
+    return census_bounds_cleaned
+
+
+def get_zipcode_bounds():
+    zipcodes_url = 'https://opendata.arcgis.com/datasets/83fc2e72903343aabff6de8cb445b81c_2.geojson'
+    zipcodes = gpd.read_file(zipcodes_url)
+
+    zipcodes_columns = ['ZIPCODE', 'SHAPE_Area', 'geometry']
+    zipcodes_cleaned = zipcodes.loc[:,zipcodes_columns]
+    zipcodes_cleaned['ZIPCODE'] = zipcodes_cleaned['ZIPCODE'].astype(int)
+    zipcodes_cleaned.head()
+
+    census_bounds_cleaned = get_census_bounds()
+    zips = gpd.sjoin(zipcodes_cleaned, census_bounds_cleaned, op='intersects')
+    zips_columns = ['ZIPCODE', 'NAME10', 'SHAPE_Area_left', 'geometry']
+    zips = zips[zips_columns]
+
+    zips = zips.dissolve(by='ZIPCODE')
+    return zips
