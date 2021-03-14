@@ -21,7 +21,7 @@ in response to our constantly changing urban landscape. Specifically, users will
   
   2. For a specific zip code, generate predicted traffic flow in region in a future year. 
   
-  3. Estimate changes in traffic flow based on % changes in the following features over the next _N_ years:
+  3. Estimate changes in traffic flow for an input zip code based on % changes in the following features over the next _N_ years:
   
          i. Bike lanes
       
@@ -30,6 +30,9 @@ in response to our constantly changing urban landscape. Specifically, users will
          iii. Walkways
     
          iv. Population
+    
+  4. Identify critical regions for improved transit infrastructure by statistical analysis of differences in traffic flow patterns.
+     Examines distributions of traffic flows by road in zip code.
  
 [Use case graphic](brendanbutler.github.com/Greening-Seattle/Prediction/img/Slide1.jpg)
 
