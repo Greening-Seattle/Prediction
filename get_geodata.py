@@ -54,7 +54,7 @@ def get_gdf(year):
 
 def get_census_bounds():
     url = 'https://opendata.arcgis.com/datasets/de58dc3e1efc49b782ab357e044ea20c_9.geojson'
-    bounds = gpd.read_file(url)
+    census_bounds = gpd.read_file(url)
     census_columns = ['NAME10', 'SHAPE_Area', 'geometry']
     census_bounds_cleaned = census_bounds.loc[:,census_columns]
     census_bounds_cleaned['NAME10'] = census_bounds_cleaned['NAME10'].astype(float)
