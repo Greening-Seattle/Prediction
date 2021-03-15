@@ -30,9 +30,6 @@ in response to our constantly changing urban landscape. Specifically, users will
          iii. Walkways
     
          iv. Population
-    
-  3. Identify critical regions for improved transit infrastructure by statistical analysis of differences in traffic flow patterns.
-     Examines distributions of traffic flows by road in zip code.
  
 [Use case graphic](brendanbutler.github.com/Greening-Seattle/Prediction/img/Slide1.jpg)
 
