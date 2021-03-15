@@ -1,4 +1,4 @@
-**Use Cases and Component Specifications of Traffic Model Predictor:** 
+## Use Cases and Component Specifications of Traffic Model Predictor: ##
 
 
 **1. Predict VER based on future Light-rail expansion routes**
