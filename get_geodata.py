@@ -58,6 +58,7 @@ def get_census_bounds():
     census_columns = ['NAME10', 'SHAPE_Area', 'geometry']
     census_bounds_cleaned = census_bounds.loc[:,census_columns]
     census_bounds_cleaned['NAME10'] = census_bounds_cleaned['NAME10'].astype(float)
+    census_bounds_cleaned.rename(columns = {'NAME10': 'Tract'}, inplace=True)
     return census_bounds_cleaned
 
 
@@ -72,8 +73,10 @@ def get_zipcode_bounds():
 
     census_bounds_cleaned = get_census_bounds()
     zips = gpd.sjoin(zipcodes_cleaned, census_bounds_cleaned, op='intersects')
-    zips_columns = ['ZIPCODE', 'NAME10', 'SHAPE_Area_left', 'geometry']
+    #zips_columns = ['ZIPCODE', 'NAME10', 'SHAPE_Area_left', 'geometry']
+    zips_columns = ['ZIPCODE', 'SHAPE_Area_left', 'geometry']
     zips = zips[zips_columns]
 
     zips = zips.dissolve(by='ZIPCODE')
+    zips.rename(columns = {'SHAPE_Area_left': 'SHAPE_Area'}, inplace=True)
     return zips
