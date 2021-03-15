@@ -16,12 +16,10 @@ As a functioning unit, accessible transportation lies at the interface of social
 
 The overrarching goal of this software is therefore to use historic traffic patterns in Seattle over the past 10+ years in
 order to inform citizens, policymakers, or environmental groups of how traffic throughout the City is projected to change
-in response to our constantly changing urban landscape. Specifically, users will be able to:
-
-  1. Calculate how traffic flows have in increased over two prior years for a given region of Seattle, specified by zip code. 
-  
-  2. For a specific zip code, generate predicted traffic flow in region in a future year. Works by estimating changes in traffic flow for
-     an input zip code based on % changes in the following features over the next _N_ years:
+in response to our constantly changing urban landscape. Specifically, for a given zip code (or set of zip codes), users will
+be able to generate predicted traffic flow in region in a future year. This software works by regressing historic traffic flow
+by region as a function of urban feautres (length of bike lanes, bike rack capacity, length of sidewalks, and population), then
+estimating changes in traffic flow for an input zip code based on % changes in a features over the next _N_ years:
   
          i. Bike lanes
       
