@@ -59,6 +59,7 @@ def get_census_bounds():
     census_bounds_cleaned = census_bounds.loc[:,census_columns]
     census_bounds_cleaned['NAME10'] = census_bounds_cleaned['NAME10'].astype(float)
     census_bounds_cleaned.rename(columns = {'NAME10': 'Tract'}, inplace=True)
+    census_bounds_cleaned.index.name = 'ID'
     return census_bounds_cleaned
 
 
@@ -78,5 +79,9 @@ def get_zipcode_bounds():
     zips = zips[zips_columns]
 
     zips = zips.dissolve(by='ZIPCODE')
+    zips.reset_index(inplace=True)
+    zips.index.name = 'ID'
     zips.rename(columns = {'SHAPE_Area_left': 'SHAPE_Area'}, inplace=True)
+    zips_columns = ['ZIPCODE', 'SHAPE_Area', 'geometry']
+    zips = zips.loc[:,zips_columns]
     return zips

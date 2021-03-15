@@ -51,6 +51,7 @@ def get_gdf(year):
             gdf_year['YEAR'] = year_list
 
     gdf_year = gdf_year[[ 'YEAR', 'AAWDT', 'GEOBASID', 'STNAME', 'SHAPE_Length', 'geometry']]
+    
     return gdf_year
   
 # Census tract boundaries
@@ -98,8 +99,7 @@ def get_traffic(year):
     zip_traffic['YEAR'] = year + 2000
     zip_traffic.reset_index(inplace=True)
     zip_traffic = zip_traffic[['ZIPCODE', 'YEAR', 'AAWDT']]
-    zip_traffic.head(n=30)
-
+    
     return zip_traffic
 
 def get_alltraffic():
@@ -110,5 +110,7 @@ def get_alltraffic():
         all_traffic = all_traffic.append(traffic)
     all_traffic.groupby(by='ZIPCODE')
     all_traffic.sort_values(['ZIPCODE', 'YEAR'], inplace=True)
+    all_traffic.rename(columns={'YEAR':'Year'}, inplace=True)
+    
     return all_traffic
 
