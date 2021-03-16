@@ -54,8 +54,12 @@ estimating changes in traffic flow for an input zip code based on % changes in a
 
 ## Software Packages
 
-**Traffic modeling package:** `green_seattle.py`
-* Trains on csv file output by data loading package and predicts based on user-input feature changes
+**Traffic modeling package:**
+* `green_seattle.py`: trains on csv file output by data loading package and predicts based on user-input feature changes
 
-**Data loading package:** `green_data.py`
-* Loads in datasets, cleans and merges data, and outputs a csv file with all features and target data
+**Data loading package:**
+* `green_data.py`: loads in datasets, cleans and merges data, and outputs a csv file with all features and target data
+> **Wrapping function:**
+> * `get_alldata()`: aggregates features and target data into a dataframe
+> **Geographical boundary data:**
+> * `get_tracts()`: loads census tracts into dataframe
