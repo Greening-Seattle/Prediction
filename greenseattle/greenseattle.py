@@ -1,15 +1,19 @@
 # Standard import libraries
 import matplotlib
 import numpy as np
+import os
 
 import pandas as pd
 import pickle
 
 # Greening Seattle libraries
 # to import
-# from Prediction_function import Predict_function_Normalization
+import greenseattle
+
 from matplotlib import pyplot as plt
 matplotlib.rcParams.update({'font.size': 20})
+
+data_path = os.path.join(greenseattle.__path__[0], 'data')
 
 
 def prepare_nn():
@@ -34,7 +38,8 @@ def prepare_nn():
     # train_labels = train_dataset[label_select]
     # test_labels = test_dataset[label_select]
 
-    f = open('Weights_MultiFeatures.pckl', 'rb')
+    filepath = os.path.join(data_path, 'Weights_MultiFeatures.pckl')
+    f = open(filepath, 'rb')
     [W1, b1, W2, b2, W3, b3] = pickle.load(f)
     f.close()
 
