@@ -1,5 +1,5 @@
 # Greening Seattle, the Making (Prediction Modeling)
-# Team Members: Praise Anyanwu, Brendan Butler, Matthew Canin (ABC)
+# Team Members: Praise Anyanwu, Brendan Butler, Matthew Canin, Nicolas Wittstock
 
 [![Build Status](https://travis-ci.org/Greening-Seattle/Prediction.svg?branch=main)](https://travis-ci.org/Greening-Seattle/Prediction)
 
