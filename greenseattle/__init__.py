@@ -1,7 +1,7 @@
 from .greenseattle import convert_csv
-from greenseattle import Predict_function
-from greenseattle import Predict_function_Normalization
-from greenseattle import function_tanh
+from .greenseattle import Predict_function
+from .greenseattle import Predict_function_Normalization
+from .greenseattle import function_tanh
 __version__ = "1.0"
 
 __all__ = [
