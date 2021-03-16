@@ -5,5 +5,8 @@
 # remove from the .gitignore file to test
 tmp_fortravis/ 
 
+# sketches of the repo with initial neural network
+# prediction model
+
 # ignore the following junk outputs
 __pycache__
