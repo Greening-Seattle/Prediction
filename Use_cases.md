@@ -12,11 +12,12 @@ Response provided by the system: Projected percent increase AAWDT for a given ye
 ![Test Image 4](https://github.com/Greening-Seattle/Prediction/zip_show)
 
 **Components and Sub-components:**
-1. green_data
-- asdf
-	- sdsaf
-2. zip.show() -- provides the user with an informational graphic on locations of numbered zip codes in the Seattle metro area.
-5. 
+- **get_trafficdata: Function that regulates all traffic data downloads from Seattle.gov for processing
+	- get_alltraffic: Compiles all AAWDT data from 2007 - 2018 for use
+- **green_model
+	- projected_traffic: Predicts aggregate AAWDT flow number for zip code over _N_ defined years, plots output
+	- 
+- **zip.show: Provides the user with an informational graphic on locations of numbered zip codes in the Seattle metro area.
  
 ## 2. Provide general insight into predicted traffic patterns based on current trends ##
 
