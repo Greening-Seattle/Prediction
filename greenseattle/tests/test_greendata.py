@@ -1,6 +1,6 @@
 import shapely
 
-import get_geodata
+import greenseattle
 
 
 def test_census_bounds_type():
