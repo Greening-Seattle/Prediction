@@ -14,8 +14,8 @@ from matplotlib import pyplot as plt
 matplotlib.rcParams.update({'font.size': 20})
 
 # data_path = os.path.join(greenseattle.__path__[0], 'data')
-filepath = './data/all_data.csv'
-filepath2 = './data/Weights_MultiFeatures.pckl'
+# filepath = './data/all_data.csv'
+# filepath2 = './data/Weights_MultiFeatures.pckl'
 
 
 def prepare_nn():
@@ -40,7 +40,8 @@ def prepare_nn():
     # train_labels = train_dataset[label_select]
     # test_labels = test_dataset[label_select]
 
-    filepath = os.path.join(data_path, 'Weights_MultiFeatures.pckl')
+    # filepath = os.path.join(data_path, 'Weights_MultiFeatures.pckl')
+    filepath = './data/all_data.csv'
     f = open(filepath, 'rb')
     [W1, b1, W2, b2, W3, b3] = pickle.load(f)
     f.close()
@@ -59,7 +60,8 @@ def feature_projection(feature, zipcode):
     # name of label
     label_select = ['AAWDT']
 
-    filepath2 = os.path.join(data_path, 'all_data.csv')
+    # filepath2 = os.path.join(data_path, 'all_data.csv')
+    filepath2 = './data/Weights_MultiFeatures.pckl'
     dataset0 = pd.read_csv(filepath2, encoding='latin-1')
     zip_data = dataset0.loc[dataset0['ZIPCODE'] == zipcode]
 
