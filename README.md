@@ -57,10 +57,10 @@ increases in the input values. In short, the user can estimate changes in traffi
 ## Software Packages
 
 ### ***Traffic modeling package***
-* `green_seattle.py`: trains on csv file output by data loading package and predicts based on user-input feature changes
+* `greenseattle.py`: trains on csv file output by data loading package and predicts based on user-input feature changes
 
 ### ***Data loading package***
-* `green_data.py`: loads in datasets, cleans and merges data, and outputs a csv file with all features and target data
+* `greendata.py`: loads in datasets, cleans and merges data, and outputs a csv file with all features and target data
 
 **Wrapping function**
 * `get_alldata()`: returns dataframe of aggregated features and target data
