@@ -41,8 +41,8 @@ def prepare_nn():
     # test_labels = test_dataset[label_select]
 
     # filepath = os.path.join(data_path, 'Weights_MultiFeatures.pckl')
-    filepath = './data/all_data.csv'
-    f = open(filepath, 'rb')
+    ffilepath2 = './data/Weights_MultiFeatures.pckl'
+    f = open(filepath2, 'rb')
     [W1, b1, W2, b2, W3, b3] = pickle.load(f)
     f.close()
 
