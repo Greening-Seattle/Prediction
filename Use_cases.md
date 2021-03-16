@@ -9,7 +9,7 @@ Information provided by the user: Zip code of interest (map is visible to user),
 
 Response provided by the system: Projected percent increase in traffic flow for a given year based on historical data within the specified zip code.
  
-![Test Image 4](https://github.com/Greening-Seattle/Prediction/main/zip_show.py)
+![Test Image 4](https://github.com/Greening-Seattle/Prediction/zip_show)
 
 **Components:**
 1. zip.show() -- provides the user with an informational graphic on locations of numbered zip codes in the Seattle metro area.
