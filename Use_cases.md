@@ -1,34 +1,19 @@
-## Use Cases and Component Specifications of Traffic Model Predictor: ##
+### Use Cases and Component Specifications of Traffic Model Predictor: ###
 
 
-**1. Predict VER based on future Light-rail expansion routes**
+## 1. Predict future traffic flows by zip code: ##
 
-User: Citizens, policy makers, environmental groups, city planners 
+**Users: Citizens, policy makers, environmental groups, city planners** 
 
-Information provided by the user: Region of construction for proposed light rail line, size of planned Light Rail expansion and expected reduction in vehicle traffic. 
+Information provided by the user: Zip code of interest (map is visible to user), future year to predict traffic flow. 
 
-Response provided by the system: Compares population-adjusted traffic flow data to that after user-input light rail information, computes VER for proposed light-rail expansion route, informs user if construction project is within bounds for expected reduction in vehicle traffic and displays maximum reduction
+Response provided by the system: Projected percent increase in traffic flow for a given year based on historical data within the specified zip code.
  
--Components:
-
-Region of the city for proposed light rail expansion
-
-	Sub component: printed menu of city regions
-
-	Sub component: map visualization of city regions
-
-Current year
-
-Proposed length of light rail line
-
-	Sub component: visualization of region choice
-
-	Sub component: menu displaying mileage ranges for proposed installations
-
-Expected reduction in vehicle traffic
+**Components:**
+1. zip.show() -- provides the user with an informational graphic on locations of numbered zip codes in the Seattle metro area.
+2. 
  
-
-**3. Provide general insight into predicted traffic patterns based on current trends**
+## 2. Provide general insight into predicted traffic patterns based on current trends ##
 
 User: Citizens, contractors, city planners, restaurant/business owners
 Information provided by the user: New or existing building, region of Seattle, address for isolating local traffic flow
