@@ -17,9 +17,11 @@ As a functioning unit, accessible transportation lies at the interface of social
 The overrarching goal of this software is therefore to use historic traffic patterns in Seattle over the past 10+ years in
 order to inform citizens, policymakers, or environmental groups of how traffic throughout the City is projected to change
 in response to our constantly changing urban landscape. Specifically, for a given zip code (or set of zip codes), users will
-be able to generate predicted traffic flow in region in a future year. This software works by regressing historic traffic flow
-by region as a function of urban feautres (length of bike lanes, bike rack capacity, length of sidewalks, and population), then
-estimating changes in traffic flow for an input zip code based on % changes in:
+be able to generate predicted traffic flow in region in a future year. This software works by training an artificial neural network
+in TensorFlow on  historic traffic flow by region as a function of urban feautres (population, bike rack capacity, and bike lane lengths).
+We chose to utilize an artificial NN because we determined from statistical analysis that features are not linearly related to each other
+over time and space. The neural network takes the 2018 feature data from an input zip code and projects changes in traffic based on proportional
+increases in the input values. In short, the user can estimate changes in traffic flow for an input zip code based on % changes in:
   
          i. Population
       
@@ -55,10 +57,10 @@ estimating changes in traffic flow for an input zip code based on % changes in:
 ## Software Packages
 
 ### ***Traffic modeling package***
-* `green_seattle.py`: trains on csv file output by data loading package and predicts based on user-input feature changes
+* `greenseattle.py`: trains on csv file output by data loading package and predicts based on user-input feature changes
 
 ### ***Data loading package***
-* `green_data.py`: loads in datasets, cleans and merges data, and outputs a csv file with all features and target data
+* `greendata.py`: loads in datasets, cleans and merges data, and outputs a csv file with all features and target data
 
 **Wrapping function**
 * `get_alldata()`: returns dataframe of aggregated features and target data
