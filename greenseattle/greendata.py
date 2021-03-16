@@ -111,6 +111,42 @@ def get_gdf(year):
     return gdf_year
 
 
+def get_traffic(year):
+    '''
+    This function a GeoDataFrame of traffic volume
+    by zip code for a given year.
+    '''
+    gdf_test = get_gdf(year)
+
+    midpoints = gdf_test.copy()
+    midpoints['MIDPOINT'] = \
+        gdf_test['geometry'].interpolate(0.5, normalized=True)
+    midpoint_columns = ['YEAR', 'AAWDT', 'MIDPOINT']
+    midpoint_cleaned = midpoints.loc[:, midpoint_columns]
+    midpoint_cleaned['geometry'] = midpoint_cleaned['MIDPOINT']
+
+    zip_mids = gpd.sjoin(get_zips(), midpoint_cleaned, op='contains')
+    zip_mids_clean = zip_mids.copy()
+    zip_mids_clean = zip_mids_clean.drop(columns=['SHAPE_Area',
+                                                  'index_right',
+                                                  'MIDPOINT'])
+
+    zip_mids_clean_c = zip_mids_clean.copy()
+    zip_mids_clean_c.drop_duplicates(inplace=True)
+    zip_mids_clean_cc = zip_mids_clean_c.copy()
+    zip_mids_clean_cc.drop(columns=['geometry'])
+    zip_mids_clean_cc = \
+        zip_mids_clean_cc.dissolve(by=['ZIPCODE'], aggfunc=sum)
+
+    zip_traffic = zip_mids_clean_cc.copy()
+    zip_traffic.drop(columns=['geometry'], inplace=True)
+    zip_traffic['YEAR'] = year + 2000
+    zip_traffic.reset_index(inplace=True)
+    zip_traffic = zip_traffic[['ZIPCODE', 'YEAR', 'AAWDT']]
+
+    return zip_traffic
+
+
 def get_alldata():
     """
     This function returns a GeoDataFrame of population,
@@ -161,6 +197,7 @@ def get_alldata():
                 zips_racks_cleaned.loc[indices, 'RACK_CAPACITY'].cumsum()
 
         return zips_racks_cleaned
+
 
     def get_lanes():
         """
@@ -223,6 +260,7 @@ def get_alldata():
 
         return zips_lanes_cleaned
 
+
     def get_pop():
         """
         This function returns
@@ -266,6 +304,7 @@ def get_alldata():
                        709631, 728661, 742235]
         pop_by_year = dict(zip(years, populations))
 
+
         def est_zip_pop(year, pop_zips_diss_clean, pop_by_year):
             pop_frac = pop_zips_diss_clean['Pop_fraction'].values
             year_pop = pop_by_year.get(year)
@@ -285,40 +324,6 @@ def get_alldata():
 
         return pop_zips_years
 
-    def get_traffic(year):
-        '''
-        This function a GeoDataFrame of traffic volume
-        by zip code for a given year.
-        '''
-        gdf_test = get_gdf(year)
-
-        midpoints = gdf_test.copy()
-        midpoints['MIDPOINT'] = \
-            gdf_test['geometry'].interpolate(0.5, normalized=True)
-        midpoint_columns = ['YEAR', 'AAWDT', 'MIDPOINT']
-        midpoint_cleaned = midpoints.loc[:, midpoint_columns]
-        midpoint_cleaned['geometry'] = midpoint_cleaned['MIDPOINT']
-
-        zip_mids = gpd.sjoin(get_zips(), midpoint_cleaned, op='contains')
-        zip_mids_clean = zip_mids.copy()
-        zip_mids_clean = zip_mids_clean.drop(columns=['SHAPE_Area',
-                                                      'index_right',
-                                                      'MIDPOINT'])
-
-        zip_mids_clean_c = zip_mids_clean.copy()
-        zip_mids_clean_c.drop_duplicates(inplace=True)
-        zip_mids_clean_cc = zip_mids_clean_c.copy()
-        zip_mids_clean_cc.drop(columns=['geometry'])
-        zip_mids_clean_cc = \
-            zip_mids_clean_cc.dissolve(by=['ZIPCODE'], aggfunc=sum)
-
-        zip_traffic = zip_mids_clean_cc.copy()
-        zip_traffic.drop(columns=['geometry'], inplace=True)
-        zip_traffic['YEAR'] = year + 2000
-        zip_traffic.reset_index(inplace=True)
-        zip_traffic = zip_traffic[['ZIPCODE', 'YEAR', 'AAWDT']]
-
-        return zip_traffic
 
     def get_alltraffic():
         '''
