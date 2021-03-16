@@ -62,7 +62,8 @@ def feature_projection(feature, zipcode):
 
     # filepath2 = os.path.join(data_path, 'all_data.csv')
     # filepath2 = './data/Weights_MultiFeatures.pckl'
-    dataset0 = pd.read_csv('Weights_MultiFeatures.pckl', encoding='latin-1')
+    filepath = './data/all_data.csv'
+    dataset0 = pd.read_csv(filepath, encoding='latin-1')
     zip_data = dataset0.loc[dataset0['ZIPCODE'] == zipcode]
 
     W1, b1, W2, b2, W3, b3 = prepare_nn()
