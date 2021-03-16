@@ -19,7 +19,7 @@ Response provided by the system: Projected percent increase AAWDT for a given ye
 
 - **zip.show: Provides the user with an informational graphic on locations of numbered zip codes in the Seattle metro area.**
  
-## 2. Predict how AAWDT flows by zip code will change in response to percent changes in any combination of available urban features. ##
+## 2. Predict how AAWDT flows by zip code will change in response to proposed urban planning efforts (increased sidewalks, more bike lanes, etc). ##
 
 **Users: Citizens, policy makers, environmental groups, city planners**
 
