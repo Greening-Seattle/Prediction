@@ -57,7 +57,8 @@ def feature_projection(feature, zipcode):
     # name of label
     label_select = ['AAWDT']
 
-    dataset0 = pd.read_csv('all_data.csv', encoding='latin-1')
+    filepath2 = os.path.join(data_path, 'all_data.csv')
+    dataset0 = pd.read_csv(filepath2, encoding='latin-1')
     zip_data = dataset0.loc[dataset0['ZIPCODE'] == zipcode]
 
     W1, b1, W2, b2, W3, b3 = prepare_nn()
