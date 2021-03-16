@@ -44,6 +44,7 @@ increases in the input values. In short, the user can estimate changes in traffi
 |   |   greenseattle.py
 |   |   greendata.py
 |   |   Demo.ipynb
+|   |   zips_show.py
 |   |
 |   +---tests
 |   |   __init__.py
