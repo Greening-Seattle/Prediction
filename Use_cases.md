@@ -23,7 +23,7 @@ _Response provided by the system:_ Projected percent increase AAWDT for a given 
 
 _Information provided by the user:_ Zip code of interest (map is visible to user), selected features, associated percent changes for each.
 
-_Response provided by the system:_ Predicted % increase in AAWDT within specified zip code for proposed additions. See sample below ⤵️
+_Response provided by the system:_ Predicted % increase in AAWDT within specified zip code for proposed additions.
 
 
 **Components and Sub-components:**
