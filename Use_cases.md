@@ -19,8 +19,17 @@ Response provided by the system: Projected percent increase AAWDT for a given ye
 
 - **zip.show: Provides the user with an informational graphic on locations of numbered zip codes in the Seattle metro area.**
  
-## 2. Provide general insight into predicted traffic patterns based on current trends ##
+## 2. Predict how AAWDT flows by zip code will change in response to percent changes in any combination of available urban features. ##
 
-User: Citizens, contractors, city planners, restaurant/business owners
-Information provided by the user: New or existing building, region of Seattle, address for isolating local traffic flow
-Response provided by the system: Predicted % increase in traffic volumes in the future for that specific region and stree
+**Users: Citizens, policy makers, environmental groups, city planners**
+
+Information provided by the user: Zip code of interest (map is visible to user), selected features, associated percent changes for each.
+
+Response provided by the system: Predicted % increase in AAWDT within specified zip code for proposed additions. See sample below:
+
+
+**Components and Sub-components:**
+- **asdf: **
+	- asdf: 	
+- **asdf: **
+	- asdf:
