@@ -1,20 +1,21 @@
 ## Use Cases and Component Specifications of Traffic Model Predictor ##
 
 
-## 1. Predict future traffic flows by zip code: ##
+## 1. Predict future traffic volumes by zip code. ##
 
 **Users: Citizens, policy makers, environmental groups, city planners** 
 
-Information provided by the user: Zip code of interest (map is visible to user), future year to predict traffic flow. 
+Information provided by the user: Zip code of interest (map is visible to user), future year to predict AAWDT (Annual Average Weekday Traffic) flow. 
 
-Response provided by the system: Projected percent increase in traffic flow for a given year based on historical data within the specified zip code.
+Response provided by the system: Projected percent increase AAWDT for a given year based on historical data within the specified zip code.
  
 ![Test Image 4](https://github.com/Greening-Seattle/Prediction/zip_show)
 
 **Components:**
-1. 
+1. green_data
+- asdf
 2. zip.show() -- provides the user with an informational graphic on locations of numbered zip codes in the Seattle metro area.
-3. 
+5. 
  
 ## 2. Provide general insight into predicted traffic patterns based on current trends ##
 
