@@ -12,8 +12,9 @@ Response provided by the system: Projected percent increase in traffic flow for 
 ![Test Image 4](https://github.com/Greening-Seattle/Prediction/zip_show)
 
 **Components:**
-1. zip.show() -- provides the user with an informational graphic on locations of numbered zip codes in the Seattle metro area.
-2. 
+1. 
+2. zip.show() -- provides the user with an informational graphic on locations of numbered zip codes in the Seattle metro area.
+3. 
  
 ## 2. Provide general insight into predicted traffic patterns based on current trends ##
 
