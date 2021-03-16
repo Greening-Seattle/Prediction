@@ -54,17 +54,20 @@ estimating changes in traffic flow for an input zip code based on % changes in a
 
 ## Software Packages
 
-**Traffic modeling package**
+### ***Traffic modeling package***
 * `green_seattle.py`: trains on csv file output by data loading package and predicts based on user-input feature changes
 
-**Data loading package**
+### ***Data loading package***
 * `green_data.py`: loads in datasets, cleans and merges data, and outputs a csv file with all features and target data
-* **Wrapping function**
-  * `get_alldata()`: returns dataframe of aggregated features and target data
-* **Geographical boundary data**
-  * `get_tracts()`: returns dataframe of census tract boundaries
-  * `get_tractcenters()`: returns dataframe of census tract centroids
-  * `get_zips()`: returns dataframe of zip code boundaries
-* **Urban features**
-  * `get_racks()`: returns dataframe of bike rack capacities by zip code and year
-  * `get_lanes()`: returns dataframe of bike lane lengths by zip code and year
+**Wrapping function**
+* `get_alldata()`: returns dataframe of aggregated features and target data
+**Geographical boundary data**
+* `get_tracts()`: returns dataframe of census tract boundaries
+* `get_tractcenters()`: returns dataframe of census tract centroids
+* `get_zips()`: returns dataframe of zip code boundaries
+**Urban features**
+* `get_racks()`: returns dataframe of bike rack capacities by zip code and year
+* `get_lanes()`: returns dataframe of bike lane lengths by zip code and year
+* `get_pop()`: returns dataframe of population by zip code and year
+**Target**
+* `get_alltraffic()`: returns dataframe of traffic volume by zip code and year
