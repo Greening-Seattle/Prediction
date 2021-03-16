@@ -19,18 +19,14 @@ order to inform citizens, policymakers, or environmental groups of how traffic t
 in response to our constantly changing urban landscape. Specifically, for a given zip code (or set of zip codes), users will
 be able to generate predicted traffic flow in region in a future year. This software works by regressing historic traffic flow
 by region as a function of urban feautres (length of bike lanes, bike rack capacity, length of sidewalks, and population), then
-estimating changes in traffic flow for an input zip code based on % changes in a features over the next _N_ years:
+estimating changes in traffic flow for an input zip code based on % changes in:
   
-         i. Bike lanes
+         i. Population
       
-         ii. Bike racks
+         ii. Bike rack capacity
       
-         iii. Walkways
-    
-         iv. Population
- 
-[Use case graphic](brendanbutler.github.com/Greening-Seattle/Prediction/img/Slide1.jpg)
-
+         iii. Length of bike lanes
+     
 ## Architecture of Repository
 ```
 |   README.md
