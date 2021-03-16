@@ -1,6 +1,5 @@
 # ignore generated python files and and jupyter note book files
 .ipynb_checkpoints
-Untitled.ipynb
 
 # ignore the following file, which is a test template
 # remove from the .gitignore file to test
