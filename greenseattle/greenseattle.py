@@ -13,7 +13,9 @@ import greenseattle
 from matplotlib import pyplot as plt
 matplotlib.rcParams.update({'font.size': 20})
 
-data_path = os.path.join(greenseattle.__path__[0], 'data')
+# data_path = os.path.join(greenseattle.__path__[0], 'data')
+filepath = './data/all_data.csv'
+filepath2 = './data/Weights_MultiFeatures.pckl'
 
 
 def prepare_nn():
