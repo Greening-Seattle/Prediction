@@ -44,11 +44,15 @@ estimating changes in traffic flow for an input zip code based on % changes in a
 +---greenseattle
 |   |   __init__.py
 |   |   greenseattle.py
+|   |   greendata.py
 |   |
 |   +---tests
 |   |   __init__.py
-|   |   test_greenseattle.py 
+|   |   test_greenseattle.py
+|   |   test_greendata.py
 |   \---data
+|           all_data.csv
+|           Population_Traffic_2017_NW.csv
 |           testing.csv
 ```
 
