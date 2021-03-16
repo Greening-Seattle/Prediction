@@ -18,7 +18,7 @@ _Response provided by the system:_ Predicted % increase in AAWDT within specifie
 	- model_viz: Executes model output for artificial NN based on user input of zipcode
 		- feature_proction: Executes the model for use within model_viz
 
-## 2. Predict future traffic volumes by zip code (coming soon in future version!). ##
+## 2. Predict future traffic volumes by zip code (coming soon in v1.2.0). ##
 
 **Users: Citizens, policy makers, environmental groups, city planners** 
 
