@@ -17,7 +17,7 @@ Response provided by the system: Projected percent increase AAWDT for a given ye
 - **green_model: Mini-package that contains modeling functions**
 	- projected_traffic: Predicts aggregate AAWDT flow number for zip code over _N_ defined years, plots output
 
-- **zip.show: Provides the user with an informational graphic on locations of numbered zip codes in the Seattle metro area.
+- **zip.show: Provides the user with an informational graphic on locations of numbered zip codes in the Seattle metro area.**
  
 ## 2. Provide general insight into predicted traffic patterns based on current trends ##
 
