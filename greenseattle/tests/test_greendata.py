@@ -1,6 +1,6 @@
 import shapely
 
-import greenseattle
+import greendata
 
 
 def test_census_bounds_type():
@@ -10,7 +10,7 @@ def test_census_bounds_type():
     that the datapoint is associated with a unit area
     """
     # dataset
-    census_bounds = get_geodata.get_census_bounds()
+    census_bounds = greendata.get_tracts()
     geometry_header = census_bounds.columns[-1]
     census_bounds_geom = census_bounds[geometry_header]
     # specify required types

@@ -51,7 +51,8 @@ def test_Predict_function():
     '''
     test tanh Predict_function
     '''
-    f = open('Weights_MultiFeatures.pckl', 'rb')
+    filepath2 = os.path.join(data_path, 'Weights_MultiFeatures.pckl')
+    f = open(filepath2, 'rb')
     [W1, b1, W2, b2, W3, b3] = pickle.load(f)
     f.close()
     x = np.zeros((1, 4))
