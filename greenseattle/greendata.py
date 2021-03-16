@@ -198,7 +198,6 @@ def get_alldata():
 
         return zips_racks_cleaned
 
-
     def get_lanes():
         """
         This function returns a GeoDataFrame of existing bike lane lengths
@@ -260,7 +259,6 @@ def get_alldata():
 
         return zips_lanes_cleaned
 
-
     def get_pop():
         """
         This function returns
@@ -304,7 +302,6 @@ def get_alldata():
                        709631, 728661, 742235]
         pop_by_year = dict(zip(years, populations))
 
-
         def est_zip_pop(year, pop_zips_diss_clean, pop_by_year):
             pop_frac = pop_zips_diss_clean['Pop_fraction'].values
             year_pop = pop_by_year.get(year)
@@ -323,7 +320,6 @@ def get_alldata():
                                          'Pop_fraction']]
 
         return pop_zips_years
-
 
     def get_alltraffic():
         '''

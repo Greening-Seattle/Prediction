@@ -7,7 +7,7 @@ import pickle
 
 # Greening Seattle libraries
 # to import
-from Prediction_function import Predict_function_Normalization
+# from Prediction_function import Predict_function_Normalization
 from matplotlib import pyplot as plt
 matplotlib.rcParams.update({'font.size': 20})
 
