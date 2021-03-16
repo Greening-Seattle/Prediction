@@ -74,12 +74,13 @@ def model_viz(zipcode):
     
     dataset0 = pd.read_csv('all_data.csv',encoding='latin-1')
     list_proportion = np.arange(0,10,0.5)
-
     
     pop_val = feature_projection(0,zipcode)
     rack_val = feature_projection(2,zipcode)
     lanes_val = feature_projection(3,zipcode)
     
+    zipcode_identifier = zipcode*np.ones(np.size(pop_val))
+
     fig, ax = plt.subplots(figsize=(8,6))
     ax.plot(list_proportion,np.log(pop_val),'o-',color='blue',label='Population')
     ax.plot(list_proportion,np.log(rack_val),'x-',color='red',label='Bike Rack Capacity')
@@ -92,7 +93,7 @@ def model_viz(zipcode):
     plt.tight_layout
     plt.legend(loc='lower right', title_fontsize='xx-small')
     
-    matrix = np.stack((np.log(pop_val),np.log(rack_val),np.log(lanes_val))).T
+    matrix = np.stack((np.log(pop_val),np.log(rack_val),np.log(lanes_val),zipcode_identifier)).T
     
     return matrix
 
