@@ -1,4 +1,4 @@
-import shapely
+# import shapely
 
 # import greendata
 

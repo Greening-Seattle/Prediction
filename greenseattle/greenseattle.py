@@ -1,14 +1,14 @@
 # Standard import libraries
 import matplotlib
 import numpy as np
-import os
+# import os
 
 import pandas as pd
 import pickle
 
 # Greening Seattle libraries
 # to import
-import greenseattle
+# import greenseattle
 
 from matplotlib import pyplot as plt
 matplotlib.rcParams.update({'font.size': 20})
