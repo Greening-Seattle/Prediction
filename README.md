@@ -21,7 +21,9 @@ be able to generate predicted traffic flow in region in a future year. This soft
 in TensorFlow on  historic traffic flow by region as a function of urban feautres (population, bike rack capacity, and bike lane lengths).
 We chose to utilize an artificial NN because we determined from statistical analysis that features are not linearly related to each other
 over time and space. The neural network takes the 2018 feature data from an input zip code and projects changes in traffic based on proportional
-increases in the input values. In short, the user can estimate changes in traffic flow for an input zip code based on % changes in:
+increases in the input values. In short, the user can estimate changes in
+traffic flow for an input zip code based on % changes of the following
+features:
   
          i. Population
       
