@@ -3,7 +3,8 @@
 
 [![Build Status](https://travis-ci.org/Greening-Seattle/Prediction.svg?branch=main)](https://travis-ci.org/Greening-Seattle/Prediction)
 
-[![Coverage Status](https://coveralls.io/repos/github/Greening-Seattle/Prediction/badge.svg?branch=main)](https://coveralls.io/github/Greening-Seattle/Prediction?branch=main)
+[![Coverage
+Status](https://coveralls.io/repos/github/Greening-Seattle/Prediction/badge.png?branch=main)](https://coveralls.io/github/Greening-Seattle/Prediction?branch=main)
 
 ## Welcome!
 **Version 1.0.0**
